@@ -1,0 +1,56 @@
+@@include('../../partials/head.html')
+<style type="text/css">
+.weui_label {
+    width: 4em;
+}
+</style>
+<div class="viewport">
+    <div 
+        class="page main" 
+        widget="inner-page" 
+        route="/" 
+        title="建议"
+    >
+    <form
+        widget="yform"
+        action="/weixin/aboutus/suggestSubmit"
+        submit-button=".js-submit"
+        auto="true"
+        redirect="{back}"
+        message--0="建议已经提交">
+        
+        <!-- 建议内容 -->
+        <div class="weui_panel">
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                    建议内容：
+                </div>
+                <div class="weui_cell_bd weui_cell_primary limit">
+                    （仅限200字）
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <textarea
+                        class="weui_textarea"
+                        widget="yvalidate,ytextarea"
+                        rules--0--rule="required"
+                        rules--0--message="请填写建议内容"
+                        name="content"
+                        placeholder="请填写建议内容"
+                        rows="5"
+                        maxlength="200"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- 提交按钮 -->
+        <div class="weui_btn_area">
+            <a href="javascript:;" class="weui_btn weui_btn_primary js-submit">提交</a>
+        </div>
+    </form>
+    </div>
+</div>
+<script>
+</script>
+@@include('../../partials/foot.html')
