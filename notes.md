@@ -20,3 +20,7 @@
 ### gulpfile.js
 - 有什么用？定义gulp任务，实现需要的功能。
 
+### 插件安装。
+- 本地安装 npm install name --save-dev
+- 全局安装 npm install name -g
+
