@@ -36,3 +36,5 @@
         .pipe(gulp.dest('dist/foo.js'));
     //最终生成的文件路径为 dist/foo.js/jquery.js,而不是dist/foo.js
 
+## gulp.watch();
+- gulp.watch()用来监视文件的变化，当文件发生变化后，我们可以利用它来执行相应的任务，例如文件压缩等。
